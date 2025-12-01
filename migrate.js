@@ -1,5 +1,5 @@
 const { sequelize } = require("./src/config/db");
-const { Customer, Account, DepositoType, Transaction } = require("./models");
+const { Customer, Account, DepositoType, Transaction } = require("./src/models");
 
 async function migrate() {
   try {
@@ -10,7 +10,6 @@ async function migrate() {
     console.log("✓ Database connected");
 
     // Sync all models (create tables)
-    // force: false = tidak akan drop existing tables
     await sequelize.sync({ force: false });
     console.log("✓ All tables created successfully");
 

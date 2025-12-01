@@ -1,4 +1,4 @@
-const { sequelize } = require("./config/db");
+const { sequelize } = require("./src/config/db");
 const { Customer, Account, DepositoType, Transaction } = require("./models");
 
 async function migrate() {

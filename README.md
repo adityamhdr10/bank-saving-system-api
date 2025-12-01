@@ -210,4 +210,4 @@ MIT
 
 ## 👤 Author
 
-Your Name
+Aditya Mahendra
